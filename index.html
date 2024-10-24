@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias Escolares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Fundo claro */
+            color: #2d2d2d; /* Texto escuro */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4d774e; /* Verde */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #8b5e34; /* Marrom */
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            background-color: #4d774e; /* Verde */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 150px;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            background-color: #4d774e; /* Verde */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .memory-section {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .memory {
+            text-align: center;
+            background-color: #eaeaea; /* Fundo claro para fotos */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .memory img {
+            max-width: 100%;
+            border: 2px solid #4d774e; /* Borda verde */
+            border-radius: 5px;
+        }
+
+        .memory h4 {
+            margin: 10px 0 5px;
+            color: #4d774e; /* Verde para a data */
+        }
+
+        footer {
+            background-color: #8b5e34; /* Marrom */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Memórias Escolares</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li>
+                <a href="#">Galeria</a>
+                <ul>
+                    <li><a href="#">Fotos de 2022</a></li>
+                    <li><a href="#">Fotos de 2023</a></li>
+                    <li><a href="#">Fotos de 2024</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="memory-section">
+            <div class="memory">
+                <h4>27/072023</h4>
+                <img src="caverna.jpg" alt="Passeio na Caverna 1">
+                <p>Aula de Campo Parque Estadual de Campinhos</p>
+            </div>
+
+            <div class="memory">
+                <h4>13/09/2024</h4>
+                <img src="farol.jpg" alt="Memória 2">
+                <p></p>
+            </div>
+
+            <div class="memory">
+                <h4>24/03/2024</h4>
+                <img src="coxa.jpg" alt="Memória 3">
+                <p>Coritiba x Maringá  campeonato paranaense</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Colégio Estadual Padre Cláudio Morelli, Alex Martins Dos Santos  nº01</p>
+    </footer>
+
+</body>
+</html>
